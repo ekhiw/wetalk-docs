@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="assets/wetalk-logo.png">
+  <title>Wetalk Docs</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <!-- global themes -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" disabled>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css" disabled>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/buble.css" disabled>
+  <!-- sidebar themes -->
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" /> -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+  <link rel="stylesheet" href="custom.css"/>
+
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      alias: {
+        '/.*/_navbar.md': '/_navbar.md',
+        '/.*/sidebar.md': '/_sidebar.md',
+        '/.*/footer.md': '/_footer.md',
+      },
+      homepage: '/docs/Introduction.md',
+      executeScript: true,
+      loadNavbar: true,
+      loadSidebar: true,
+      loadFooter: '_footer.md',
+      maxLevel: 1,
+      subMaxLevel: 2,
+      sidebarDisplayLevel: 1,
+      logo: 'assets/logo-wetalk-medium.png',
+      name: 'wetalk',
+      repo: '',
+      search: 'auto',
+      search: {
+        maxAge: 86400000, // Expiration time, the default one day
+        paths: 'auto',
+        placeholder: 'Type to search',
+        noData: 'No Results!',
+        depth: 6,
+        hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+      }
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
+</body>
+</html>
